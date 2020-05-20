@@ -16,6 +16,8 @@ variables:
   appxPackageDir: '$(build.artifactStagingDirectory)\AppxPackages\\'
 
 steps:
+
+- bash: git checkout -b winui3preview
 - task: NuGetToolInstaller@1
 
 - task: NuGetCommand@2
